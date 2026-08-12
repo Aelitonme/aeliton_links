@@ -681,15 +681,27 @@ body {
 .reveal {
     opacity: 0;
 
-    transform: translateY(25px);
+    transform:
+        translateY(55px)
+        scale(0.96);
+
+    filter: blur(6px);
 
     transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+        opacity 0.8s ease,
+        transform 0.8s ease,
+        filter 0.8s ease;
 }
 
 .reveal.active {
     opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    filter: blur(0);
+}
 
     transform: translateY(0);
 }
